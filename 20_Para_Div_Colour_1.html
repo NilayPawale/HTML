@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* div p, div h1, div>p , div+p */
+        div~p{
+            background-color: blue;
+            color:white;
+            text-shadow:2px 2px 2px red;
+        }
+    </style>
+</head>
+<body>
+    <p>this is para1111</p>
+    <p>this is para2222</p>
+    <p>this is para3333</p>
+    <h1>This is h1 4444</h1>
+    <div>
+        <p>this is para1111 in div</p>
+        <p>this is para2222 in div</p>
+        <h1>This is h1 in div</h1>
+        <article>
+            <p>this is para1111 in div in article</p>
+            <p>this is para2222 in div in article</p>
+            <h1>This is h1 in div in article</h1>
+            <p>this is para1111 in div in article</p>
+        </article>
+        <h1>This is h1 in div outside article</h1>
+        <p>this is para1111 in div outside article</p>
+    </div>
+    <p>this is para1111  outside div</p>
+    <p>this is para1111  outside div</p>
+    <h1>This is h1 4444 outside div</h1>
+    <p>this is para1111  outside div</p>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header{
+            background-color: blue;
+            color:white;
+            width:80%;
+            margin:auto;
+            position:fixed;
+            top:0px;
+            left:50px;
+        }
+        footer{
+            background-color: green;
+            position:fixed;
+            left:200px;
+            bottom:0;
+
+        }
+        #parent{
+            border:2px solid red;
+            width:600px;
+            height:400px;
+            position:relative;
+        }
+        #child{
+            border:2px solid green;
+            width:400px;
+            height:200px;
+            /*position:relative;*/
+
+        }
+        #grandchild{
+            border:2px solid blueviolet;
+            width:200px;
+            height:100px;
+            position:absolute;
+            right:0;
+        }
+        #tablediv{
+            /*position:sticky;*/
+            top:0;
+            bottom:0
+        }
+    </style>
+</head>
+<body>
+    <header>This is header</header><br>
+    <div style="position:relative;left:50px">This is relative div</div>
+    <ul type="circle">
+        <li>mobile
+            <ul>
+                <li>iPhone</li>
+                <li>google pixel</li>
+                <li>samsung notes</li>
+            </ul>
+        </li>
+        <li>books</li>
+        <li>magzines</li>
+        <li>flowers</li>
+    </ul>
+    <div id="tablediv">
+        <table  bgcolor="cyan" border="2px" width="80%" >
+            <caption align="bottom">This is caption</caption>
+            <tr bgcolor="pink">
+                <th>product id</th>
+                <th>Name</th>
+                <th>Qty</th>
+                <th>price</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>
+                    <fieldset>  
+                        <legend>this is chair</legend>            chair--<br>this is office char,<br>
+                     red background-color </fieldset> 
+                </td>
+                <td>50</td>
+                <td>4000</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Table</td>
+                <td>50</td>
+                <td>2000</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Shelf</td>
+                <td>20</td>
+                <td>3000</td>
+            </tr>
+        </table>
+    </div>
+    <hr>
+    <div id="parent">
+        this is parent div
+        <div id="child">
+            This is child div
+            <div id="grandchild">
+                This is grand chiled div
+            </div>
+        </div>
+    </div>
+    <ol type="A" start="3">
+        <li>mobile
+            <ul>
+                <li>iPhone</li>
+                <li>google pixel</li>
+                <li>samsung notes</li>
+            </ul>
+        </li>
+        <li>books</li>
+        <li>magzines</li>
+        <li>flowers</li>
+    </ol>
+    <dl>
+        <dt>Term1</dt>
+        <dd>This is data definition for term 1</dd>
+        <dt>Term2</dt>
+        <dd>This is data definition for term 2</dd>
+        <dt>Term3</dt>
+        <dd>This is data definition for term 3</dd>
+    </dl>
+    <footer>This is footer</footer>
+</body>
+</html>
